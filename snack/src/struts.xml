@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="GBK"?>
+<!-- 指定Struts 2配置文件的DTD信息 -->
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.1.7//EN"
+	"http://struts.apache.org/dtds/struts-2.1.7.dtd">
+<!-- Struts 2配置文件的根元素 -->
+<struts>
+	<!-- 配置了系列常量 -->
+	<constant name="struts.i18n.encoding" value="utf-8"/>	
+	<constant name="struts.devMode" value="true"/>	
+	
+ 	<package name="xqp" extends="struts-default">
+		<action name="snack_*" class="action.SnackAction" method="{1}">
+			<result name="allsnack">/allsnack.jsp</result>
+			<result name="index">/indext.jsp</result>
+			<result name="type">/Type.jsp</result>
+			<result name="upt">/success.jsp</result>
+			<result name="upf">/upload.jsp</result>
+			<result name="info">/info.jsp</result>
+			<result name="typeinfo">/type_snack.jsp</result>
+			<result name="search">/type_snack.jsp</result>
+			<result name="mysnack">/mysnack.jsp</result>
+			<result name="list">/admin_snack.jsp</result>
+			<result name="delete" type="redirectAction">snack_my?snackOne.id=${#session.user.id}</result>
+			<result name="shenhe">/snack_shenhe.jsp</result>
+			<result name="shps" type="redirectAction">snack_list?page=1</result>
+			<result name="edit">/snack_edit.jsp</result>
+			<result name="update" type="redirectAction">snack_list?page=1</result>
+			<result name="adelete" type="redirectAction">snack_list?page=1</result>
+		</action>
+		<action name="user_*" class="action.UserAction" method="{1}">
+			<result name="zct">/index.jsp</result>
+			<result name="zcf">/regist.jsp</result>
+			<result name="logint">/index.jsp</result>
+			<result name="loginf">/login.jsp</result>
+			<result name="out">/index.jsp</result>
+			<result name="list">/admin_user.jsp</result>
+			<result name="edit">/user_edit.jsp</result>
+			<result name="update" type="redirectAction">user_list?page=1</result>
+			<result name="delete" type="redirectAction">user_list?page=1</result>
+		</action>
+		<action name="admin_*" class="action.AdminAction" method="{1}">
+			<result name="logint" type="redirectAction">user_list?page=1</result>
+			<result name="loginf">/admin.jsp</result>
+			<result name="out">/admin.jsp</result>
+		</action>	
+		<action name="collection_*" class="action.CollectionAction" method="{1}">
+			<result name="add" type="redirectAction">snack_info?snackOne.id=${collection.snack.id}</result>
+			<result name="delete" type="redirectAction">snack_info?snackOne.id=${collection.snack.id}</result>
+			<result name="mycollec">/mycollec.jsp</result>
+		</action>
+		<action name="question_*" class="action.QuestionAction" method="{1}">
+			<result name="question">/question.jsp</result>
+			<result name="add" type="redirectAction">question_all</result>
+			<result name="info">/ask.jsp</result>
+			<result name="my">/myquestion.jsp</result>
+			<result name="delete" type="redirectAction">question_my?id=${#session.user.id}</result>
+			<result name="list">/admin_question.jsp</result>
+			<result name="edit">/question_edit.jsp</result>
+			<result name="update" type="redirectAction">question_list?page=1</result>
+			<result name="adelete" type="redirectAction">question_list?page=1</result>			
+		</action>
+		<action name="ask_add" class="action.AskAction" method="add">
+			<result name="add" type="redirectAction">question_info?id=${ask.question.id}</result>
+			<result name="laud" type="redirectAction">question_info?id=${ask.question.id}</result>
+		</action>						
+	</package>
+	<package name="xqp2" extends="json-default">
+		<action name="ask_laud" class="action.AskAction" method="laud">
+			<result name="laud" type="json"></result>
+		</action>
+	</package>
+</struts>

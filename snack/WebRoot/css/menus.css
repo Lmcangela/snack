@@ -1,0 +1,97 @@
+﻿@charset "utf-8";
+/**
+ * Copyright  All Rights Reserved
+ * Heart recipes
+ * created by author amyzhang @ 2014-7-12 
+ */
+ /*commons*/
+.pb33{padding-bottom: 33px;}
+
+ /*menus*/
+ .category-list li{float: left; margin-right: 20px;  text-align: center; font-size: 16px;}
+.gblock-link{ display: block;color: #fff; padding: 10px 22px; height: 1em; line-height: 1em; background-color: #a79e95;}
+.gblock-link:hover,.gblock-link.cur{background-color: #fa7e3e; color: #fff;}
+.c-name{font-size: 18px; height: 40px; line-height: 40px; padding: 0 25px; background-color: #f1f0ee;}
+.c-name div{background-position: right top; background-repeat: no-repeat; background-size: 55px 55px;}
+.c-name .d{background-image: url(../images/d.png);}
+.c-name .zhu{background-image: url(../images/zhu.png);}
+.c-name .niu{background-image: url(../images/niu.png);}
+.c-name .zhurou{background-image: url(../images/zhurou.png);}
+.c-name .ji{background-image: url(../images/ji.png);}
+.c-name .ya{background-image: url(../images/ya.png);}
+.c-name .yang{background-image: url(../images/yang.png);}
+.c-name .nai{background-image: url(../images/nai.png);}
+.c-name .yu{background-image: url(../images/yu.png);}
+.c-name .dan{background-image: url(../images/dan.png);}
+.c-name .qitasc{background-image: url(../images/qitasc.png);}
+.c-name .yinliao{background-image: url(../images/yinliao.png);}
+.c-name .bupin{background-image: url(../images/bupin.png);}
+.c-name .jingyesc{background-image: url(../images/jingyesc.png);}
+.c-name .kouwei{background-image: url(../images/kouwei.png);}
+.c-name .junlei{background-image: url(../images/junlei.png);}
+.c-name .bing{background-image: url(../images/bing.png);}
+.c-name .dianxin{background-image: url(../images/dianxin.png);}
+.c-name .doufu{background-image: url(../images/doufu.png);}
+.c-name .douzhipin{background-image: url(../images/douzhipin.png);}
+.c-name .e{background-image: url(../images/e.png);}
+.c-name .fan{background-image: url(../images/fan.png);}
+.c-name .ganguodoulei{background-image: url(../images/ganguodoulei.png);}
+.c-name .gaodian{background-image: url(../images/gaodian.png);}
+.c-name .genjinsc{background-image: url(../images/genjinsc.png);}
+.c-name .guaguo{background-image: url(../images/guaguo.png);}
+.c-name .jiachangsc{background-image: url(../images/jiachangsc.png);}
+.c-name .jiang{background-image: url(../images/jiang.png);}
+.c-name .jiu{background-image: url(../images/jiu.png);}
+.c-name .liangcai{background-image: url(../images/liangcai.png);}
+.c-name .mian{background-image: url(../images/mian.png);}
+.c-name .nangua{background-image: url(../images/nangua.png);}
+.c-name .paigu{background-image: url(../images/paigu.png);}
+.c-name .qiezi{background-image: url(../images/qiezi.png);}
+.c-name .tanggeng{background-image: url(../images/tanggeng.png);}
+.c-name .tudou{background-image: url(../images/tudou.png);}
+.c-name .xia{background-image: url(../images/xia.png);}
+.c-name .xican{background-image: url(../images/xican.png);}
+.c-name .zhou{background-image: url(../images/zhou.png);}
+.c-name .bei{background-image: url(../images/bei.png);}
+.c-name .caixi{background-image: url(../images/caixi.png);}
+.c-name .hongbei{background-image: url(../images/hongbei.png);}
+.c-name .qitafl{background-image: url(../images/qitafl.png);}
+.c-name .qitaql{background-image: url(../images/qitaql.png);}
+.c-name .shiling{background-image: url(../images/shiling.png);}
+.c-name .shuiguo{background-image: url(../images/shuiguo.png);}
+.c-name .tianpin{background-image: url(../images/tianpin.png);}
+.c-name .xie{background-image: url(../images/xie.png);}
+.c-name .yancai{background-image: url(../images/yancai.png);}
+
+
+
+
+.line-list{margin-bottom: 15px;}
+.line-list li{float: left; margin-left: 10px; width: 80px; margin-top: 15px;}
+.col2 .line-list li:nth-child(5n+1) {margin-left: 25px;}
+.col1 .line-list li:nth-child(10n+1) {margin-left: 25px;}
+.line-list li a{color: #000;}
+.line-list li a:hover{color: #fa7e3e;}
+
+/*food therapy*/
+.therapy-pannel{padding: 0 15px;}
+.therapy-pannel h3{border-bottom: 1px solid #e8e7e5; height: 40px; line-height: 40px; text-indent: 12px;}
+.therapy-pannel ul li{float: left; font-size: 16px; margin-bottom: -1px;  border-bottom: 1px solid #e8e7e5;}
+.therapy-pannel ul li a{display: inline-block; color: #000;text-indent: 12px; border-right: 1px solid #e8e7e5;height: 30px; line-height: 30px;width: 112px; margin: 5px 0;}
+.therapy-pannel ul li:nth-child(8n) a{border-right: 0;}
+.therapy-pannel ul li a:hover{color: #fa7e3e;}
+
+/*recipe category list*/
+.recipe-category-list li{float: left;  border-bottom: 1px solid #e8e7e5; margin-bottom: -1px;}
+.recipe-category-list li a{color: #000; display: block; width: 186px; margin: 12px 0; height: 28px; line-height: 28px; border-right: 1px solid #e8e7e5; text-align: center;}
+.recipe-category-list li:nth-child(5n) a{border-right: 0;}
+.recipe-category-list li a .r-name{display: inline-block; width: 106px; font-size: 16px;}
+.recipe-category-list li a .cg2{display: inline-block; width: 71px;}
+.recipe-category-list li a:hover{color: #fa7e3e;}
+
+/*serch keyword list*/
+.search-keyword-pannel{padding: 0 20px;}
+.search-keyword-list li{float: left;  border-bottom: 1px solid #e8e7e5; margin-bottom: -1px;}
+.search-keyword-list li a{color: #000; display: block; width: 222px; margin: 12px 0; height: 28px; line-height: 28px; border-right: 1px solid #e8e7e5; text-indent: 20px; font-size: 16px;}
+.search-keyword-list li a:hover{color: #fa7e3e;}
+.search-keyword-list li:nth-child(4n) a{border-right: 0;}
